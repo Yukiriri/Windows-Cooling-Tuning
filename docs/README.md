@@ -19,21 +19,21 @@
 # CPU温度压制
 cmd命令一览：
 - 设置插电CPU频率上限
-    ```
-    powercfg -SetAcValueIndex SCHEME_CURRENT SUB_PROCESSOR "75b0ae3f-bce0-45a7-8c89-c9611c25e100" 3000
-    powercfg -SetAcValueIndex SCHEME_CURRENT SUB_PROCESSOR "75b0ae3f-bce0-45a7-8c89-c9611c25e101" 3000
-    powercfg -SetAcValueIndex SCHEME_CURRENT SUB_PROCESSOR "75b0ae3f-bce0-45a7-8c89-c9611c25e102" 3000
-    ```
+  ```
+  powercfg -SetAcValueIndex SCHEME_CURRENT SUB_PROCESSOR "75b0ae3f-bce0-45a7-8c89-c9611c25e100" 3000
+  powercfg -SetAcValueIndex SCHEME_CURRENT SUB_PROCESSOR "75b0ae3f-bce0-45a7-8c89-c9611c25e101" 3000
+  powercfg -SetAcValueIndex SCHEME_CURRENT SUB_PROCESSOR "75b0ae3f-bce0-45a7-8c89-c9611c25e102" 3000
+  ```
 - 设置离电CPU频率上限
-    ```
-    powercfg -SetDcValueIndex SCHEME_CURRENT SUB_PROCESSOR "75b0ae3f-bce0-45a7-8c89-c9611c25e100" 3000
-    powercfg -SetDcValueIndex SCHEME_CURRENT SUB_PROCESSOR "75b0ae3f-bce0-45a7-8c89-c9611c25e101" 3000
-    powercfg -SetDcValueIndex SCHEME_CURRENT SUB_PROCESSOR "75b0ae3f-bce0-45a7-8c89-c9611c25e102" 3000
-    ```
+  ```
+  powercfg -SetDcValueIndex SCHEME_CURRENT SUB_PROCESSOR "75b0ae3f-bce0-45a7-8c89-c9611c25e100" 3000
+  powercfg -SetDcValueIndex SCHEME_CURRENT SUB_PROCESSOR "75b0ae3f-bce0-45a7-8c89-c9611c25e101" 3000
+  powercfg -SetDcValueIndex SCHEME_CURRENT SUB_PROCESSOR "75b0ae3f-bce0-45a7-8c89-c9611c25e102" 3000
+  ```
 - 让修改生效
-    ```
-    powercfg -SetActive SCHEME_CURRENT
-    ```
+  ```
+  powercfg -SetActive SCHEME_CURRENT
+  ```
 
 其中，`3000`代表最高上限，单位为`MHZ`  
 如果要恢复为无上限，改成`0`  
@@ -56,13 +56,13 @@ cmd命令一览：
 # GPU温度压制
 cmd命令一览：
 - 设置GPU核心频率上限
-    ```
-    nvidia-smi -lgc 0,1500
-    ```
+  ```
+  nvidia-smi -lgc 0,1500
+  ```
 - 恢复默认
-    ```
-    nvidia-smi -rgc
-    ```
+  ```
+  nvidia-smi -rgc
+  ```
 
 其中，`1500`代表最高上限，单位为`MHZ`  
 还是老套路，按照能接受的温度范围调整  

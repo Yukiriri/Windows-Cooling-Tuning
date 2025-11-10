@@ -1,9 +1,9 @@
-powercfg -SetAcValueIndex SCHEME_CURRENT SUB_PROCESSOR "75b0ae3f-bce0-45a7-8c89-c9611c25e100" 5000
-powercfg -SetAcValueIndex SCHEME_CURRENT SUB_PROCESSOR "75b0ae3f-bce0-45a7-8c89-c9611c25e101" 5000
-powercfg -SetAcValueIndex SCHEME_CURRENT SUB_PROCESSOR "75b0ae3f-bce0-45a7-8c89-c9611c25e102" 5000
+powercfg -SetAcValueIndex Scheme_Current Sub_Processor ProcFreqMax 5000
+powercfg -SetAcValueIndex Scheme_Current Sub_Processor ProcFreqMax1 5000
+powercfg -SetAcValueIndex Scheme_Current Sub_Processor ProcFreqMax2 5000
 
-powercfg -SetDcValueIndex SCHEME_CURRENT SUB_PROCESSOR "75b0ae3f-bce0-45a7-8c89-c9611c25e100" 5000
-powercfg -SetDcValueIndex SCHEME_CURRENT SUB_PROCESSOR "75b0ae3f-bce0-45a7-8c89-c9611c25e101" 5000
-powercfg -SetDcValueIndex SCHEME_CURRENT SUB_PROCESSOR "75b0ae3f-bce0-45a7-8c89-c9611c25e102" 5000
+powercfg -SetDcValueIndex Scheme_Current Sub_Processor ProcFreqMax 5000
+powercfg -SetDcValueIndex Scheme_Current Sub_Processor ProcFreqMax1 5000
+powercfg -SetDcValueIndex Scheme_Current Sub_Processor ProcFreqMax2 5000
 
-powercfg -SetActive SCHEME_CURRENT
+powercfg -SetActive Scheme_Current

@@ -5,17 +5,17 @@
 如果你想，台式也可以用  
 
 ## CPU温度压制
-1. 进入仓库的[`bin`](../bin/)文件夹
-2. 选择下载合适频率的`set-cpu-max-****mhz.bat`
-3. 管理员运行`.bat`
+
+- 修改方法  
+  1. 进入仓库的[`bin`](../bin/)文件夹
+  2. 选择下载合适频率的`set-cpu-max-****mhz.bat`
+  3. 管理员运行`.bat`
+- 恢复修改  
+  下载和管理员运行[`reset-cpu-max-mhz.bat`](../bin/reset-cpu-max-mhz.bat)
 
 > [!NOTE]
 > 每个人的机器的发热和散热能力都不同，按照你能接受的温度范围选择  
 > 更高上限则增加性能也增加发热和功耗，反之亦然  
-
-> [!NOTE]
-> 如果要恢复为无上限  
-> 下载和管理员运行[`reset-cpu-max-mhz.bat`](../bin/reset-cpu-max-mhz.bat)  
 
 > [!IMPORTANT]
 > 需要注意OEM覆盖电源计划  
@@ -25,16 +25,16 @@
 > 除非切换电源计划，才需要给新电源计划重新运行一次  
 
 ## NVIDIA GPU温度压制
-1. 进入仓库的[`bin`](../bin/)文件夹
-2. 选择下载合适频率的`set-nvgpu-max-****mhz.bat`
-3. 管理员运行`.bat`
+
+- 修改方法  
+  1. 进入仓库的[`bin`](../bin/)文件夹
+  2. 选择下载合适频率的`set-nvgpu-max-****mhz.bat`
+  3. 管理员运行`.bat`
+- 恢复修改  
+  下载和管理员运行[`reset-nvgpu-max-mhz.bat`](../bin/reset-nvgpu-max-mhz.bat)
 
 > [!NOTE]
 > 还是老套路，按照能接受的温度范围选择  
-
-> [!NOTE]
-> 如果要恢复为无上限  
-> 下载和管理员运行[`reset-nvgpu-max-mhz.bat`](../bin/reset-nvgpu-max-mhz.bat)  
 
 > [!NOTE]
 > 这个修改仅够维持本次开机，如果要持久生效，需要加入开机自启  
